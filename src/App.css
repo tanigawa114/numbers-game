@@ -12,6 +12,11 @@ body {
   position: relative;
 }
 
+#wrapeer {
+  min-height: 100vh;
+  position: relative;
+}
+
 #container {
   /* 50px * 2 + 10px * 2 */
   margin: 16px auto;
@@ -71,4 +76,26 @@ body {
 #btn:active {
   margin-top: 12px;
   box-shadow: none;
+}
+
+#level-erea {
+  width: 300px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#level-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#level-box div {
+  background-color: gold;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
 }

@@ -10,7 +10,7 @@ function Panel({ panel }) {
       (_panel) => _panel.num === panel.num - 1
     )[0];
 
-    if (panel.num === 1 || prePanel.isPressed) {
+    if (panel.num !== "" && (panel.num === 1 || prePanel.isPressed)) {
       dispatch({ type: CLICK_NUMBER, num: panel.num });
     }
   };

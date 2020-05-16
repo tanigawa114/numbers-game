@@ -30,6 +30,14 @@ class Timer {
   stop() {
     clearInterval(this.timeoutId);
   }
+
+  reset() {
+    this.startTime = undefined;
+    this.timeoutId = undefined;
+    this.currentTime = 0;
+    const timer = document.getElementById("timer");
+    timer.textContent = "0.00";
+  }
 }
 
 export default Timer;
